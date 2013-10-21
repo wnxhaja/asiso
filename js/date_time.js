@@ -36,14 +36,3 @@ function date_time(id)
     setTimeout('date_time("'+id+'");','1000');
     return true;
 }
-
-
-
-
-
-//mga pamataka ni jalil
-
-function notTimeYet()
-  {
-  alert("it is not time yet for you to start");
-  }

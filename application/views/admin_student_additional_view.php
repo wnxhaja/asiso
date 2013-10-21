@@ -1,3 +1,1 @@
-	<li><a href= "<?php echo current_url() ?>" >Enter College</a></li>
-	<li><a href= "controller/event" >Eventdasdsads</a></li>
-	
+	<li><a href= "<?php echo site_url('college_page') ?>" >Enter College</a></li>

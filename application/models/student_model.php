@@ -27,7 +27,7 @@ class Student_model extends CI_Model {
 	 *  otherwise, @return a query object
 	 */
 	public function getStudentCourseAndCollege($idNumber) {
-		$query = $this->db->query("Select college, course from Belongs where stud_id = '$idNumber'");
+		$query = $this->db->query("SELECT col.name as colname, cou.name as couname FROM Belongs b join College col on col.college_initial = b.college join course cou on cou.course_initial = b.course WHERE b.stud_id = '$idNumber'");
 		if($query->num_rows() == 0)
 			return FALSE;
 		return $query;

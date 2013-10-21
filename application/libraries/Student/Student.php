@@ -33,8 +33,8 @@ class Student extends CI_Driver_Library {
 		if($skul != false) {
 			//set attributes if $skul query returns something
 			$skulRow = $skul->row();
-			$this->collegein = $skulRow->college;
-			$this->coursein = $skulRow->course;
+			$this->collegein = $skulRow->colname;
+			$this->coursein = $skulRow->couname;
 		}
 		$this->valid_drivers = array('student_admin');
 		
@@ -70,7 +70,7 @@ class Student extends CI_Driver_Library {
 	}
 	
 	public function getCollegein() {
-		return $this->collegin;
+		return $this->collegein;
 	}
 	
 	public function getCoursein() {

@@ -27,10 +27,6 @@ class Student_admin extends CI_Driver {
 		//TODO
 	}
 	
-	public function getIt() {
-		return '123';
-	}
-	
 }
 
 /* End of file */

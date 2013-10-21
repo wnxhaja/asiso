@@ -25,7 +25,6 @@
 			text-align: center;
 			position: relative;
 			float: left;
-			margin-right: 3px;
 	}
 	
 	#well li{
@@ -41,12 +40,9 @@
 		height: 25px;
 		line-height: 25px;
 		background-color: white;
-		border: 1px solid black;
-		border-radius: 5px;
 	}
 			
 	#header {
-		text-shadow: 0.2em 0.2em 0.4em #161616;
 		text-align: center;
 		font-family: calibri;
 		font-size: 20px;
@@ -56,15 +52,10 @@
 		color #424242;
 	}
 	
-	#header ul {
-		width: 80%;
-		margin: 100 auto ;
-		padding: 0px;
-		background-color: #FC0; 
-	}
 	
-	/* Content pannel for the student info part */
-	#studentinfo {
+	
+	/* Content pannel for the info part in homepage */
+	.info {
 		font-family: Tahoma;
 		font-size: 15px;
 		height: auto;
@@ -99,7 +90,7 @@
 		font-size: 15px;
 		padding: 10px;
 		height: auto;
-		border: 1px solid;
+		border: 1px solid black;
 		min-height: 200px;
 		margin:100px auto;
 		width:1200px;
@@ -112,6 +103,7 @@
 		margin-top: 2px;
 	}
 	
+	/* candidate i delete */
 	#navmenu .sub2 a {
 		margin-top: 2px;
 	}
@@ -119,6 +111,7 @@
 	#navmenu li:hover > a{
 		background-color: #CFC;
 	}
+	
 	
 	#navmenu li:hover a:hover {
 		background-color: #CFCFCF;
@@ -131,6 +124,7 @@
 		left: 0px;
 	}
 	
+	/* candidate i delete */
 	#navmenu ul.sub2 {
 		display: none;
 		position: absolute;
@@ -252,36 +246,37 @@
 	}
 	
 	/*
-		In home page of the student
+		In home page of the college, student
 		The details part of the page
 	*/
-	#homedetails {
+	.details {
 		width: 300px;
 		min-height: 200px;
 		float: left;
 		font-family: Tahoma;
 		text-shadow: none;
-		text-align: center;
+		text-align: left;
 		font-size: 18px;
 	}
 	
-	#homedetails table {
+	.details table {
 		padding-top: 40px;
-		margin-left: auto;
+		padding-left: 20px;
+		margin-left: 10px;
 		margin-right: auto;
 		font-size: 15px;
 	}
 	
-	#homedetails tr, td {
+	.details tr, td {
 		font-family: Tahoma;
 		text-shadow: none;
 	}
 	
 	/*
-		In home page of the student
+		In home page of the college, student
 		The image part of the page
 	*/
-	#homepicture {
+	.picture {
 		width: 196px;
 		min-height: 200px;
 		float: right;
@@ -289,190 +284,112 @@
 		text-shadow: none;
 	}
 	
-	/* Chosen event*/
-	
-	.eventcontent {
-		font-family: Tahoma;
-		font-size: 15px;
-		padding: 0px;
-		height: auto;
-		min-height: 200px;
-		margin:100px auto;
-		width:1200px;
-		text-shadow: none;
-		overflow: auto;
-		border-radius:3px;
+	#tab {
+		width: auto;
+		height: 25px;
+		padding-bottom: 1px;
+		border-bottom: 1px solid black;
 	}
 	
-	#eventChosen{
-		text-align:left;
-		list-style:none;
-		
+	/* event table for college*/
+	#eventTable{
+
+		border-spacing: 0px;
+		margin:auto;
+	}
+	#eventTable tr{
+		border:3px solid red;
+	}
+	#eventTable th,td{
+		text-align:center;
+		margin:auto;
+		padding:2px 20px;
+	}
+	#eventTable th{
+		background-color:pink;
+	}
+	#eventTable tr:hover > td{
+		background-color: hsl(0,0%,40%);
 	}
 	
-	#eventChosen li{
-		margin-left:100px;
-		margin-top:18px ;
-		
+	#eventTable td  a{
+		text-decoration: none;
+		border:1px solid black;
+		display:block;
+		margin:0;
 	}
 	
-	#body {
-		background: url('../img/paper1.jpg');
+	/* event table wrapper*/
+	
+	.eventWrapper{
 	}
 	
-	.register-title {
-	  width: 270px;
-	  line-height: 43px;
-	  margin: 50px auto 20px;
-	  font-size: 19px;
-	  font-weight: 500;
-	  color: white;
-	  color: rgba(255, 255, 255, 0.95);
-	  text-align: center;
-	  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	  background: #d7604b;
-	  border-radius: 3px;
-	  background-image: -webkit-linear-gradient(top, #dc745e, #d45742);
-	  background-image: -moz-linear-gradient(top, #dc745e, #d45742);
-	  background-image: -o-linear-gradient(top, #dc745e, #d45742);
-	  background-image: linear-gradient(to bottom, #dc745e, #d45742);
-	  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05), 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-	  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05), 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-	}
+	/***/
+	
+.myDataTable {
+    background: 444;
+	margin:auto;
+}
 
-	.register {
-	  margin: 0;
-	  width: 500px;
-	  padding: 20px;
-	  /*background: #f4f4f4;
-	  border-radius: 3px;
-	  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-	  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);*/
-	}
 
-	input {
-	  font-family: inherit;
-	  font-size: inherit;
-	  color: inherit;
-	  -webkit-box-sizing: border-box;
-	  -moz-box-sizing: border-box;
-	  box-sizing: border-box;
-	}
+.myDataTable thead tr th {
+    height: 28px;
+    font-size: 14px;
+    font-family: tahoma, helvetica, arial, sans-serif;
+    padding-left: 5px;
+}
 
-	.register-input {
-	  display: block;
-	  width: 100%;
-	  height: 38px;
-	  margin-top: 2px;
-	  font-weight: 500;
-	  background: none;
-	  border: 0;
-	  border-bottom: 1px solid #d8d8d8;
-	}
-	.register-input:focus {
-	  border-color: #1e9ce6;
-	  outline: 0;
-	}
+.myDataTable thead tr th img {
+    padding-right: 5px;
+    padding-top: 1px;
+}
 
-	.register-button {
-	  display: block;
-	  width: 150px;
-	  height: 42px;
-	  margin-top: 25px;
-	  font-size: 16px;
-	  font-weight: bold;
-	  color: #494d59;
-	  text-align: center;
-	  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-	  background: #fcfcfc;
-	  border: 1px solid;
-	  border-color: #d8d8d8 #d1d1d1 #c3c3c3;
-	  border-radius: 2px;
-	  cursor: pointer;
-	  background-image: -webkit-linear-gradient(top, #fefefe, #eeeeee);
-	  background-image: -moz-linear-gradient(top, #fefefe, #eeeeee);
-	  background-image: -o-linear-gradient(top, #fefefe, #eeeeee);
-	  background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
-	  -webkit-box-shadow: inset 0 -1px rgba(0, 0, 0, 0.03), 0 1px rgba(0, 0, 0, 0.04);
-	  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.03), 0 1px rgba(0, 0, 0, 0.04);
-	}
-	.register-button:active {
-	  background: #eee;
-	  border-color: #c3c3c3 #d1d1d1 #d8d8d8;
-	  background-image: -webkit-linear-gradient(top, #eeeeee, #fcfcfc);
-	  background-image: -moz-linear-gradient(top, #eeeeee, #fcfcfc);
-	  background-image: -o-linear-gradient(top, #eeeeee, #fcfcfc);
-	  background-image: linear-gradient(to bottom, #eeeeee, #fcfcfc);
-	  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.03);
-	  box-shadow: inset 0 1px rgba(0, 0, 0, 0.03);
-	}
-	.register-button:focus {
-	  outline: 0;
-	}
+.myDataTable thead tr td {
+    height: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: tahoma, helvetica, arial, sans-serif;
+    padding-left: 5px;
+}
 
-	.register-switch {
-	  height: 32px;
-	  margin-bottom: 15px;
-	  padding: 4px;
-	  background: #6db244;
-	  border-radius: 2px;
-	  background-image: -webkit-linear-gradient(top, #60a83a, #7dbe52);
-	  background-image: -moz-linear-gradient(top, #60a83a, #7dbe52);
-	  background-image: -o-linear-gradient(top, #60a83a, #7dbe52);
-	  background-image: linear-gradient(to bottom, #60a83a, #7dbe52);
-	  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
-	  box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
-	}
+.myDataTable tbody {
+    background: #f2f5f9;
+}
 
-	.register-switch-input {
-	  display: none;
-	}
+.myDataTable tbody tr:nth-child(even) td,tbody tr.even td {
+    background: #e2ebf4;
+    font-size: 12px;
+    padding-left: 5px;
+    height: 14px;
+}
 
-	.register-switch-label {
-	  float: left;
-	  width: 50%;
-	  line-height: 32px;
-	  color: white;
-	  text-align: center;
-	  text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
-	  cursor: pointer;
-	}
-	.register-switch-input:checked + .register-switch-label {
-	  font-weight: 500;
-	  color: #434248;
-	  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-	  background: white;
-	  border-radius: 2px;
-	  background-image: -webkit-linear-gradient(top, #fefefe, #eeeeee);
-	  background-image: -moz-linear-gradient(top, #fefefe, #eeeeee);
-	  background-image: -o-linear-gradient(top, #fefefe, #eeeeee);
-	  background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
-	  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
-	  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
-	}
+.myDataTable tbody tr:nth-child(odd) td,tbody tr.odd td {
+    background: #f7faff;
+    font-size: 12px;
+    padding-left: 5px;
+    height: 14px;
+}
 
-	:-moz-placeholder {
-	  color: #aaa;
-	  font-weight: 300;
-	}
+.myDataTable tbody tr:hover td {
+    background-color: #e7e7e7;
+}
 
-	::-moz-placeholder {
-	  color: #aaa;
-	  font-weight: 300;
-	  opacity: 1;
-	}
+.myDataTable tbody tr td {
+    height: 14px;
+    padding-left: 5px;
+    font-size: 12px;
+}
 
-	::-webkit-input-placeholder {
-	  color: #aaa;
-	  font-weight: 300;
-	}
+.myDataTable tbody tr td a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+}
 
-	:-ms-input-placeholder {
-	  color: #aaa;
-	  font-weight: 300;
-	}
-
-	::-moz-focus-inner {
-	  border: 0;
-	  padding: 0;
-	}
+.myDataTable thead tr th a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline;
+}

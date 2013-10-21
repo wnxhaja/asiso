@@ -1,14 +1,14 @@
-<li><a href= "<?php echo site_url('controller/logout') ?>" >Sign-out</a></li>
-		</ul>	
+		<li><a href= "<?php echo site_url('controller/logout') ?>" >Sign-out</a></li>
+			</ul>	
 	</div>
 	
 	
 	<!--Content of the page-->
 	<div class="content">
-		<div id="studentinfo">
-			<div id="homedetails">
+		<div class="info">
+			<div class="details">
 				<center>Student Information</center>
-				<table cellpadding= 2 cellspacing = 2>
+				<table cellpadding= 2 cellspacing = 5>
 				
 					<tr>
 						<td>Name</td>
@@ -21,7 +21,7 @@
 					</tr>
 					
 					<tr>
-						<td>Account Type</td>
+						<td>Acc Type</td>
 						<td><?php echo $accnt ?></td>
 					</tr>
 					
@@ -29,11 +29,22 @@
 						<td>Id Number</td>
 						<td><?php echo $idnumber ?></td>
 					</tr>
+					
+					<tr>
+						<td>Course</td>
+						<td><?php echo $course ?></td>
+					</tr>
+					
+					<tr>
+						<td>College</td>
+						<td><?php echo $college ?></td>
+					</tr>
+					
 				</table>
 		
 			</div>
 			
-			<div id = "homepicture">
+			<div class="picture">
 				<img src="<?php echo base_url() ?>img/iit-logo.gif" width="196" height="200" align="texttop" longdesc="<?php echo base_url() ?>img/iit-logo.gif" />
 			</div>
 		</div>
@@ -73,11 +84,10 @@
 		</div>
 	</div>
 	
-	<div class="row">
-		<div class="span12">
-			<div id="well">
-				<center><li><a href ="#">All rights reserved 2013. </a></li></center>
-				<center><li><a href ="#">Copyright &copy Snoop Dogs</a></li></center>
-			</div>
-		</div>
-	</div>	
+	
+	<div id="well">
+		<center><li><a href ="#">All rights reserved 2013. </a></li></center>
+		<center><li><a href ="#">Copyright &copy Snoop Dogs</a></li></center>
+	</div>
+	
+</body>

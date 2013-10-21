@@ -69,16 +69,6 @@ class Controller extends CI_Controller {
 		$this->session->sess_destroy();
 		redirect(site_url(''));
 	 }
-	 
-	 //////// Jalil Mode ////////////
-	 
-	public function event(){
-	
-	$this->load->model('event_model','event');
-	
-	$result['event'] = $this->event->eventDummy();
-	$this->load->view('event_view',$result);
-	}
  }
 		
 
