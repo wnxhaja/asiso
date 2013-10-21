@@ -1,0 +1,9 @@
+functions to be implemented in Admin_student
+
++getEventRecords(event_id); //returns all student records in a specific event
++enrollStudent(stud_id); //returns void, updates isEnrolled attribute of student to 'true'
++addStudent(idnum, fname, minit, lname, password, username,  year); //adds a student to db
++editStudent($stud_id, $whatToEdit, $newValue); //edit a student currently in db
++getCourseEvents(course_id); // returns all events of a specified course
++getCollegeEvents(college_id); // returns all events of a specified college
++getEventParticipants(event_id); // returns all participants of an event

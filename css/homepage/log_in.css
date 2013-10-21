@@ -1,0 +1,51 @@
+/* header part of the log-in page */
+#header {
+	background-image: url(/asiso/images/background/login_header.jpg);
+	border-radius:15px;
+	position:fixed;
+	top:20px;
+	left:4%;
+	width:90%;
+	height:70px;
+	text-align:center;
+	padding:10px;
+}
+
+/* upper(head) part of the header text */
+p#headertext {
+	color:#556B2F;
+}
+
+/* lower(sub) part of the header text */
+p#subheadertext {
+	color:#8B0000;
+}
+
+/* footer part of the log-in page */
+#footer {
+
+}
+
+/* style for the forms container */
+#forms {
+	border-style:solid;
+	border-width:1px;
+	border-radius:15px;
+	box-shadow:2px 2px 50px #808080;
+	margin:230px auto 250px auto;
+	height:50px;
+	width:250px;
+	padding:40px 15px; 
+}
+
+/* style for individual form */
+form {
+	width:auto;
+	max-width:auto;
+}
+
+/* span */
+span {
+	text-align:justify;
+	text-transform:uppercase;
+}

@@ -1,0 +1,17 @@
+- eventID
+- eventName
+- eventDate
+- eventLoc
+- inTime
+- outTime
+- collegeOwner
+
++ eventStarts() //check' if signing in can start
+//returns boolean
+
+
++ eventEnds() //check's if signing out can start
+//returns boolean
+
++ sisoStundent() // siso student to an event
+// undecided pako sa parameter

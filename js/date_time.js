@@ -1,0 +1,49 @@
+function date_time(id)
+{
+    date = new Date;
+    year = date.getFullYear();
+    month = date.getMonth();
+    months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+    d = date.getDate();
+    day = date.getDay();
+    days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+    h = date.getHours();
+	var AMPM;
+	AMPM = h<12? "AM": "PM";	
+    
+	if(h<10)
+    {
+        h = "0"+h;
+    }
+        
+	m = date.getMinutes();
+        
+	if(m<10)
+    {
+        m = "0"+m;
+    }
+       
+	s = date.getSeconds();
+    if(s<10)
+    {
+        s = "0"+s;
+    }
+	
+	hour = h <= 12 ? h%13 : h%12;
+        
+	result = 'Today is '+days[day]+' '+months[month]+' '+d+', '+year+' '+ hour +':'+m+':'+s+ ' '+ AMPM;
+    document.getElementById(id).innerHTML = result;
+    setTimeout('date_time("'+id+'");','1000');
+    return true;
+}
+
+
+
+
+
+//mga pamataka ni jalil
+
+function notTimeYet()
+  {
+  alert("it is not time yet for you to start");
+  }

@@ -1,0 +1,11 @@
+Student adt
+
+X idNum
+X name
+X username
+X collegein
+X coursein
+X year
+
++ public function getThisStudentEventRecord() //returns the record of the current instance of Student in array. Returns an empty array if no records are found for the student
+-----------------------------------------------------//gituyo jud na wala ni idnum na parameter

@@ -1,0 +1,18 @@
+Governor adt ---> extends Admin_student
+
+//all attributes of Student is inherited
+
++ addAdmin() //gives administrative rights to a selected student
+----------------//returns true if no error is found, false otherwise
++ deleteAdmin() //deletes administrative rights to a selected student
+-------------------//returns true if no error is found, false otherwise
++ clearAdmin() //deletes all the admin rights to everyone except the governor      iteratively.
+------------------//returns true if no error is found, false otherwise
++ turnOverRights() //the former governor gives the right to govern the college to the new governor
+------------------//returns true if no error is found, false otherwise
++ startSem()   //officially starts the semester, thus enabling any form of checking of attendance to any events
+------------------//returns void
++ endSem()    //officially ends the semester, thus disabling any form of checking of attendance to any events
+-----------------//returns void
++ unenrollStudent($studId) //unenrolll the specified student
+-------------------------------//returns true if successfully unenrolled, otherwise return false
